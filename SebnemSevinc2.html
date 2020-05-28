@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sebnem Sevinc</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="background">
+
+<div class="nav">
+  <a class="a active" href="#"> HOME </a>
+  <a class="b" href="#"> EDUCATION </a>
+  <a class="c" href="#"> EXPERIENCE </a>
+  <a class="d" href="#"> PORTFOLIO </a>
+  <a class="e" href="#"> CONTACT </a>
+</div>
+<div class="content">
+
+  <div class="HOME">
+
+    <h1>Hi, I'm Sebnem Sevinc </h1>
+    <h3> New graduate; Junior UX Designer and Web Developer </h3><br> <br>
+
+
+  </div>
+<div class="EDUCATION">
+  <h3><q> <b><i>You are always a student, never a master. You have to keep moving forward.</i></b></q> – Conrad Hall</h3><br><br>
+
+  <h1> My Education </h1><br>
+  <h2> Computer Programmer Program - Diploma (2 years)<br>
+       Sheridan College, Oakville, ON	<br>						                  Jan 2018 - Apr 2020<br><br>
+
+Finance and Credit (Bachelor’s degree) (Graduated)<br>
+International Banking Institute, Saints- Petersburg, Russia &
+Azerbaijan Western University, Baku, Azerbaijan   <br>                  Feb 2003- Jun 2009<br><br>
+</h2>
+<h1>Technical (IT) Skills</h1><br>
+<h2><ul>
+<li>Tools<strong>: NetBeans, MS Visual Studio, Adobe XD, Visual Paradigm, Code Blocks, Atom, UML</li>
+<li>Data Base Management<strong>: Oracle, SQL Server, MySQL</li>
+<li>Languages<strong>: HTML, CSS, JavaScript, C#, Visual Basic</li>
+<li>Operating System<strong>: Windows, Unix, Linux</li>
+<li>Research and Planning<strong>: Gathering information, Researching</li>
+</ul></h2>
+</div>
+<div class="EXPERIENCE">
+  <h3><q> Every job you do, you gain more experience. You never stop learning.</q>- Joanna Cassidy</h3><br>
+
+  <h1> Highlights of Qualifications </h1><br>
+  <h2>
+•	Experienced in software development, web technologies, and web application development through project work at Sheridan College<br><br>
+•	Currently graduated from Computer Programmer Program – Diploma (2 years) at Sheridan College, April 2020<br><br>
+•	Demonstrated excellent problem-solving, conflict resolution skills, and working well under pressure as a result of analyzing and resolving information technology problems in assignments<br><br>
+•	Task focused; feedback response, quickly notice and push to fix technical problems.<br><br>
+•	Detail- oriented and precise; follow- through is deep and literal to ensure tasks were completed in accordance with quality standards.<br><br>
+•	Languages: English, Azerbaijani, Turkish, Russian
+
+   <br><br>
+
+   <h1>Other Work Experience</h1><br>
+<h2>
+Accountant (part-time)<br><br>
+United Aid for Azerbaijan (UAFA) Non- Governmental Organization<br>                                      Jun 2007- Dec 2014<br><br>
+
+Prepared budgets and monthly accounts, monthly request, monthly and quarterly financial reports to relevant governmental bodies and donor organizations. Prepared all contracts and verbal agreements in organization.
+
+</h2><br>
+</div>
+<div class="CONTACT">
+  <h1> E-mail: sebnemsevinch@gmail.com </h1><br>
+
+  <h1> Cell: (905) 467 81 38 </h1><br>
+
+
+
+
+</div>
+</div>
+<script type="text/javascript" src="JS/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('a').click(function(){
+      //alert("i am click");
+      var selected = $(this);
+      $('a').removeClass('active');
+      $(selected).addClass('active');
+    });
+
+    var $a = $('.a'),
+    $b = $('.b'),
+    $c = $('.c'),
+    $d = $('.d'),
+    $e = $('.e'),
+    $HOME = $('.HOME'),
+    $EDUCATION = $('.EDUCATION');
+    $EXPERIENCE = $('.EXPERIENCE');
+    $PORTFOLIO = $('.PORTFOLIO');
+    $CONTACT = $('.CONTACT');
+
+    $a.click(function(){
+      $HOME.fadeIn();
+      $EDUCATION.fadeOut();
+      $EXPERIENCE.fadeOut();
+      $PORTFOLIO.fadeOut();
+      $CONTACT.fadeOut();
+    });
+    $b.click(function(){
+      $EDUCATION.fadeIn();
+      $HOME.fadeOut();
+      $EXPERIENCE.fadeOut();
+      $PORTFOLIO.fadeOut();
+      $CONTACT.fadeOut();
+    });
+    $c.click(function(){
+      $EXPERIENCE.fadeIn();
+      $HOME.fadeOut();
+      $EDUCATION.fadeOut();
+      $PORTFOLIO.fadeOut();
+      $CONTACT.fadeOut();
+    });
+    $d.click(function(){
+      $PORTFOLIO.fadeIn();
+      $HOME.fadeOut();
+      $EDUCATION.fadeOut();
+      $EXPERIENCE.fadeOut();
+      $CONTACT.fadeOut();
+    });
+    $e.click(function(){
+      $CONTACT.fadeIn();
+      $HOME.fadeOut();
+      $EDUCATION.fadeOut();
+      $EXPERIENCE.fadeOut();
+      $PORTFOLIO.fadeOut();
+
+    });
+
+  });
+  </script>
+
+
+
+</body>
+</html>
